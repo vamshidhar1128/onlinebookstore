@@ -24,10 +24,10 @@ kind: Service
 metadata:
   name: bookstore-service
 spec:
-  type: LoadBalancer
   selector:
     app: bookstore
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 8080  # Exposed port on the Service
+      targetPort: 8081  # Port inside the container (Tomcat)
+  type: LoadBalancer  # External acces
