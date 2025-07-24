@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: bookstore
-        image: vamshidhar1128/main:latest1.0
+        image: vamshidhar1128/onlinebook
         ports:
         - containerPort: 8080
 
